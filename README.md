@@ -7,17 +7,17 @@ Below is an instruction how to generate Public and Private keys and code sample 
 
 1. Generating key pairs
  ```shell 
- openssl genrsa -out "...\rsa\key" 1024
+ openssl genrsa -out "...\rsa\my_key" 1024
 ```
 
 2. Converting to PKCS#8 format
 ```shell 
-openssl pkcs8 -topk8 -inform PEM -outform DER -in "...\rsa\key" -out "...\rsa\key.der" -nocrypt
+openssl pkcs8 -topk8 -inform PEM -outform DER -in "...\rsa\my_key" -out "...\rsa\key.der" -nocrypt
 ```
 
 3. Output public key portion in DER format
 ```shell 
-openssl rsa -in "...rsa\key.der" -pubout -outform DER -out "...\rsa\key_pub.der"
+openssl rsa -in "...rsa\key.der" -inform DER -pubout -outform DER -out "...\rsa\key_pub.der"
 ```
 
 
