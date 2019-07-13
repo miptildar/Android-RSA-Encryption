@@ -68,6 +68,6 @@ public static PrivateKey getPrivateKey(String filename)
     NoSuchAlgorithmException, InvalidKeyException, 
     BadPaddingException, IllegalBlockSizeException {
         Cipher cipher = Cipher.getInstance("RSA");
-        cipher.init(Cipher.DECRYPT_MODE, privateKey); // the key loaded from the previous method
+        cipher.init(Cipher.DECRYPT_MODE, privateKey); // the key is loaded from the previous method
         String decryptedMessage = new String(cipher.doFinal(Base64.getDecoder().decode(decryptedMessage)));
     }
