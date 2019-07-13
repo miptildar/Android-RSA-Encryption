@@ -4,7 +4,7 @@ This project is an example of how one can encrypt messages on Android side using
 Below is an instruction of how to generate Public and Private keys and a code sample of a decryption process.
 
 ### Use case
-You can secure your API by using a special token, created from an encrypted JSON.
+For example one can secure your API by using a special token, created from an encrypted JSON.
 ```json
 {
    "userId":123,
