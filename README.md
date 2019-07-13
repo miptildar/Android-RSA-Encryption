@@ -1,4 +1,4 @@
-# Android-RSA-Encryption
+# Android RSA Encryption
 
 This project is an example of how one can encrypt messages on Android side using RSA.
 Below is an instruction of how to generate Public and Private keys and a code sample of a decryption process.
