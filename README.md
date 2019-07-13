@@ -1,7 +1,17 @@
 # Android-RSA-Encryption
 
 This project is an example of how one can encrypt messages on Android side using RSA.
-Below is an instruction how to generate Public and Private keys and code sample of description process
+Below is an instruction of how to generate Public and Private keys and a code sample of a decryption process.
+
+### Example
+You can secure your API by using a special token, created from an encrypted JSON.
+```json
+{
+   "userId":123,
+   "expirationDate":123
+}
+```
+Of course it has its own security disadvantages, but this is just an example.
 
 ## Keys generation
 
